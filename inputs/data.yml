@@ -1,0 +1,5 @@
+# Created by trek CLI
+1-2:
+    bot_infos.0:
+        type: string
+        value: CH-tki5teefy

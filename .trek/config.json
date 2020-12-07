@@ -1,0 +1,16 @@
+{
+    "marvin_url": "<PUT YOUR MARVIN URL HERE>",
+    "marvin_JWT": "<PUT YOUR MARVIN JWT HERE>",
+    "marvin_secret": "",
+    "router_port": 5000,
+    "action_timeout": 30,
+    "input_data_path": "inputs/data.yml",
+    "input_event_path": "inputs/event.yml",
+    "local_inventory_file": "",
+    "envs": {
+        "BLCKS_DEBUG_LOG_MODE": "table",
+        "BLCKS_DEBUG_LOG_TABLE_WIDTH": 100,
+        "BLCKS_DEBUG_LOG_FIELDS": "data",
+        "BLCKS_DEBUG_LOG_FORMAT": "{message} => inputParams: {data[inputParamsStr]}"
+    }
+}

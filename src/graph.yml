@@ -1,0 +1,49 @@
+$schema: 'http://json-schema.pentium.network/marvin-workflows/0.1/schema'
+graph:
+  metadata:
+    version: 0.0.0
+    templateId: network.pentium.example.get.ip
+    title: 示範範本二
+    author: ''
+    description: 透過 ifconfig.io 回傳 IP 至指定頻道
+  edges:
+    - source: '0'
+      target: '1'
+    - source: '1'
+      target: '2'
+      metadata:
+        binding:
+          - property: str_message
+            type: string
+            value: '{{ 1.result }}'
+  nodes:
+    - id: '0'
+      metadata:
+        type: trigger
+        sources: []
+        marvinProperties:
+          position:
+            xAxis: 165
+            yAxis: 275
+    - id: '1'
+      metadata:
+        type: action
+        title: 打個 url
+        description: 打個 url
+        marvinProperties:
+          position:
+            xAxis: 440
+            yAxis: 275
+        script:
+          id: blcksrequests
+    - id: '2'
+      metadata:
+        type: action
+        title: 傳送訊息至指定頻道
+        description: 選擇指定的 Chatbot IM，傳送訊息至指定頻道
+        marvinProperties:
+          position:
+            xAxis: 715
+            yAxis: 275
+        script:
+          id: notification

@@ -1,0 +1,14 @@
+id: blcksrequests
+schemaVersion: '0.2'
+version: '0.1.0'
+title: 打個 url 
+description: 打個 url 
+namespace: network.pentium
+assets:
+- SCRIPT
+
+outputs:
+  result:
+    title: 輸出結果
+    description: 輸出結果
+    type: string
