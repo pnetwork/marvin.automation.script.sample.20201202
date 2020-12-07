@@ -4,7 +4,7 @@ import requests
 import pytest
 
 
-LOCAL_HOST_PORTAL = "https://mini-ansen.pentium.network"
+LOCAL_HOST_PORTAL = "<PUT YOUR MARVIN URL HERE>"
 TOKEN = None
 
 
